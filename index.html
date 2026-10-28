@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NexaTech Solutions provides web development, IT support, networking and computer repair services.">
+  <title>NexaTech Solutions | Technology Made Simple</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">Nexa<span>Tech</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button id="themeToggle" class="theme-toggle"
+        aria-label="Switch to dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <p class="eyebrow">YOUR PARTNER IN TECHNOLOGY</p>
+        <h1>Smart Technology.<br><span>Better Solutions.</span></h1>
+        <p class="hero-text">
+          We help businesses and individuals solve technology
+          challenges through innovative, reliable and affordable
+          digital solutions.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#services" class="btn btn-primary">Explore Services</a>
+          <a href="#contact" class="btn btn-outline">Contact Us</a>
+        </div>
+
+        <div class="hero-note">
+          Web Development · IT Support · Networking
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">WHO WE ARE</p>
+          <h2>Technology that works for you.</h2>
+        </div>
+
+        <div>
+          <p>
+            NexaTech Solutions is a technology company concept
+            focused on making digital tools easier to use.
+            We aim to help small businesses and individuals
+            build their online presence and solve everyday
+            technology challenges.
+          </p>
+          <p>
+            Our goal is to deliver practical, user-friendly
+            and dependable technology solutions.
+          </p>
+          <a href="#contact" class="text-link">Let's work together →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT WE DO</p>
+          <h2>Our Services</h2>
+          <p>Practical technology services for a digital world.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>
+              Responsive websites designed to help businesses
+              establish their online presence.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🛠️</div>
+            <h3>IT Support</h3>
+            <p>
+              Help with everyday software, computer setup
+              and basic technical troubleshooting.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🌐</div>
+            <h3>Networking</h3>
+            <p>
+              Basic network planning, connectivity setup
+              and troubleshooting solutions.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🔒</div>
+            <h3>Digital Security</h3>
+            <p>
+              Guidance on safer passwords, software updates
+              and responsible digital practices.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">OUR WORK</p>
+          <h2>Featured Projects</h2>
+          <p>Sample projects demonstrating our planned capabilities.</p>
+        </div>
+
+        <div class="card-grid project-grid">
+          <article class="project-card">
+            <div class="project-visual visual-one">01</div>
+            <div class="project-info">
+              <span class="project-tag">In progress</span>
+              <h3>Business Website</h3>
+              <p>A responsive website concept for a small business.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-two">02</div>
+            <div class="project-info">
+              <span class="project-tag">Planned</span>
+              <h3>Student Task Manager</h3>
+              <p>A tool for organizing assignments and deadlines.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-three">03</div>
+            <div class="project-info">
+              <span class="project-tag">Planned</span>
+              <h3>Inventory Tracker</h3>
+              <p>A dashboard concept for tracking business stock.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-alt" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">GET IN TOUCH</p>
+          <h2>Have a project in mind?</h2>
+          <p>
+            Tell us what you need, and let's explore a suitable
+            technology solution together.
+          </p>
+          <p class="contact-note">
+            This demonstration form does not send messages
+            to a real company inbox yet.
+          </p>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name"
+            placeholder="Enter your name" required minlength="2">
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email"
+            placeholder="you@example.com" required>
+
+          <label for="service">Service interested in</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option>Web Development</option>
+            <option>IT Support</option>
+            <option>Networking</option>
+            <option>Digital Security</option>
+            <option>Other</option>
+          </select>
+
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="4"
+            placeholder="Tell us about your project..."
+            required minlength="10"></textarea>
+
+          <button type="submit" class="btn btn-primary">
+            Send Inquiry
+          </button>
+
+          <p id="formMessage" class="form-message"
+            role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#home" class="logo">Nexa<span>Tech</span></a>
+      <p>Technology made simple.</p>
+      <p>© <span id="year"></span> NexaTech Solutions.
+        Portfolio demonstration.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
